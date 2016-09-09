@@ -1,0 +1,14 @@
+<h2>{{formData?.heading}}</h2>
+
+<div *ngFor="let field of formData?.formFields">
+    <div [ngSwitch]="field.type">
+        <template [ngSwitchCase]="fieldType.Text">
+            <field-input-text (valueChanged)="formValueChanged($event, field)" [label]="field.label" [placeholderVal]="field.placeholder">
+            </field-input-text>
+        </template>
+        <template [ngSwitchCase]="fieldType.Password">
+            <field-input-password (valueChanged)="formValueChanged($event, field)" [label]="field.label">
+            </field-input-password>
+        </template>
+    </div>
+</div>

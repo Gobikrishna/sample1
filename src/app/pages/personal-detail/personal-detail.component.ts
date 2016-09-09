@@ -3,11 +3,10 @@ import {  Router } from '@angular/router';
 import {OAppConfig, APP_CONFIG, IAppConfig} from '../../config.service';
 
 @Component({
-    selector: 'home',
-    templateUrl: './template/home.template.html',
-
+    selector: 'personal-detail',
+    templateUrl: './template/personal-detail.template.html'
 })
-export class HomeComponent {
+export class PersonalDetailComponent {
 
     constructor(
         @Inject(OAppConfig) private appConfig: IAppConfig,
