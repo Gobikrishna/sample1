@@ -5,7 +5,15 @@ export let OAppConfig = new OpaqueToken('app.config');
 export enum FieldType {
     Text,
     Password,
-    Select
+    Select,
+    Email,
+    Radio,
+    Checkbox,
+    File,
+    Button,
+    Submit,
+    Reset,
+    Textarea
 }
 
 export interface IField {

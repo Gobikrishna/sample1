@@ -14,6 +14,15 @@ import {DynamicFormComponent} from './dynamic-form-component/dynamic-form.compon
 
 import {InputTextComponent} from './fieldComponents/input-text/input-text.component';
 import {InputPasswordComponent} from './fieldComponents/input-password/input-password.component';
+import {InputEmailComponent} from './fieldComponents/input-email/input-email.component';
+import {InputRadioComponent} from './fieldComponents/input-radio/input-radio.component';
+import {InputCheckboxComponent} from './fieldComponents/input-checkbox/input-checkbox.component';
+import {InputFileComponent} from './fieldComponents/input-file/input-file.component';
+import {TextareaComponent} from './fieldComponents/textarea/textarea.component';
+
+import {ButtonButtonComponent} from './fieldComponents/button-button/button-button.component';
+import {ButtonResetComponent} from './fieldComponents/button-reset/button-reset.component';
+import {ButtonSubmitComponent} from './fieldComponents/button-submit/button-submit.component';
 
 @NgModule({
 	imports: [
@@ -30,6 +39,14 @@ import {InputPasswordComponent} from './fieldComponents/input-password/input-pas
 		DynamicFormComponent,
 		InputTextComponent,
 		InputPasswordComponent,
+		InputEmailComponent,
+		InputRadioComponent,
+		InputFileComponent,
+		TextareaComponent,
+		InputCheckboxComponent,
+		ButtonButtonComponent,
+		ButtonResetComponent,
+		ButtonSubmitComponent,
 		PersonalDetailComponent
 	],
 	providers: [

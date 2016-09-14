@@ -10,5 +10,42 @@
             <field-input-password (valueChanged)="formValueChanged($event, field)" [label]="field.label">
             </field-input-password>
         </template>
+        <template [ngSwitchCase]="fieldType.Email">
+            <field-input-email (valueChanged)="formValueChanged($event, field)" [label]="field.label" [placeholderVal]="field.placeholder">
+            </field-input-email>
+        </template>
+        <template [ngSwitchCase]="fieldType.Radio">
+            <field-input-radio (valueChanged)="formValueChanged($event, field)" [label]="field.label">
+            </field-input-radio>
+        </template>
+         <template [ngSwitchCase]="fieldType.Checkbox">
+            <field-input-checkbox (valueChanged)="formValueChanged($event, field)" [label]="field.label">
+            </field-input-checkbox>
+        </template>
+        <template [ngSwitchCase]="fieldType.File">
+            <field-input-file (valueChanged)="formValueChanged($event, field)" [label]="field.label">
+            </field-input-file>
+        </template>
+        <template [ngSwitchCase]="fieldType.Textarea">
+            <field-textarea (valueChanged)="formValueChanged($event, field)" [label]="field.label">
+            </field-textarea>
+        </template>
+
+        <template [ngSwitchCase]="fieldType.Button">
+            <field-button-button (valueChanged)="formValueChanged($event, field)" [label]="field.label" [valueText]="field.value">
+            </field-button-button>
+        </template>
+
+        <template [ngSwitchCase]="fieldType.Reset">
+            <field-button-reset (valueChanged)="formValueChanged($event, field)" [label]="field.label" [valueText]="field.value">
+            </field-button-reset>
+        </template>
+
+        <template [ngSwitchCase]="fieldType.Submit">
+            <field-button-submit (valueChanged)="formValueChanged($event, field)" [label]="field.label" [valueText]="field.value">
+            </field-button-submit>
+        </template>
+
+
     </div>
 </div>
